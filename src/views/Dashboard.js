@@ -16,12 +16,14 @@
 
 */
 import React from "react";
+import {useAuth0} from "@auth0/auth0-react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+//import classNames from "classnames";
 // react plugin used to create charts
-import { Line, Bar } from "react-chartjs-2";
+//import { Line, Bar } from "react-chartjs-2";
 
 // reactstrap components
+/*
 import {
   Button,
   ButtonGroup,
@@ -48,13 +50,14 @@ import {
   chartExample2,
   chartExample3,
   chartExample4,
-} from "variables/charts.js";
+} from "variables/charts.js";*/
 
 function Dashboard(props) {
-  const [bigChartData, setbigChartData] = React.useState("data1");
+ /* const [bigChartData, setbigChartData] = React.useState("data1");
   const setBgChartData = (name) => {
     setbigChartData(name);
-  };
+  };*/
+    const {user}=useAuth0();
   return (
     <>
       <div className="content">

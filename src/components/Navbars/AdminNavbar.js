@@ -37,8 +37,6 @@ import {
     NavbarToggler,
     ModalHeader,
 } from "reactstrap";
-import AuthenticationButton from "../Login/authentication-button";
-import AuthNav from "./auth-nav";
 
 function AdminNavbar(props) {
     const [collapseOpen, setcollapseOpen] = React.useState(false);

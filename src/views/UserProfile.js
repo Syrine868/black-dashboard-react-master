@@ -31,11 +31,11 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import {useAuth0} from "@auth0/auth0-react";
+//import {useAuth0} from "@auth0/auth0-react";
 
 
 export const  UserProfile=(props)=> {
- const {user}= useAuth0();
+
 
   return (
 
@@ -183,7 +183,7 @@ export const  UserProfile=(props)=> {
                       className="avatar"
                       src={require("assets/img/emilyz.jpg").default}
                     />
-                    <h5 className="title"></h5>
+
                   </a>
                   <p className="description"></p>
                 </div>

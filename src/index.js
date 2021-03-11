@@ -17,10 +17,10 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter/*, Route, Switch, Redirect*/ } from "react-router-dom";
 
 import AdminLayout from "layouts/Admin/Admin.js";
-import RTLLayout from "layouts/RTL/RTL.js";
+//import RTLLayout from "layouts/RTL/RTL.js";
 
 import "assets/scss/black-dashboard-react.scss";
 import "assets/demo/demo.css";
@@ -31,10 +31,10 @@ import ThemeContextWrapper from "./components/ThemeWrapper/ThemeWrapper";
 import BackgroundColorWrapper from "./components/BackgroundColorWrapper/BackgroundColorWrapper";
 
 import Auth0ProviderWithHistory from "./auth/auth0-history";
-import Login from "./views/Login";
+//import Login from "./views/Login";
 import LogoutButton from "./components/Login/LogoutButton";
 import LoginButton from "./components/Login/LoginButton";
-import UserProfile from "./views/UserProfile";
+//import UserProfile from "./views/UserProfile";
 
 ReactDOM.render(
     <>
@@ -44,8 +44,9 @@ ReactDOM.render(
     <BackgroundColorWrapper>
         <LogoutButton/>
         <LoginButton/>
+
 <AdminLayout/>
-<UserProfile/>
+
         {/*
         <Switch>
           <Route path="/login" render={(props) => <Login {...props}/>}/>
