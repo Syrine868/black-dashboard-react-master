@@ -28,7 +28,7 @@ function Footer() {
         <Nav>
           <NavItem>
             <NavLink href="https://www.creative-tim.com/?ref=bdr-user-archive-footer">
-              Creative Tim
+              GenIF'I
             </NavLink>
           </NavItem>
           <NavItem>
@@ -36,11 +36,7 @@ function Footer() {
               About Us
             </NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink href="https://www.creative-tim.com/blog?ref=bdr-user-archive-footer">
-              Blog
-            </NavLink>
-          </NavItem>
+
         </Nav>
         <div className="copyright">
           © {new Date().getFullYear()} made with{" "}
@@ -49,9 +45,9 @@ function Footer() {
             href="https://www.creative-tim.com/?ref=bdr-user-archive-footer"
             target="_blank"
           >
-            Creative Tim
+            Quad Squad
           </a>{" "}
-          for a better web.
+          for a better web .
         </div>
       </Container>
     </footer>

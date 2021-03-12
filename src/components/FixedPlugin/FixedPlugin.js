@@ -34,11 +34,11 @@ function FixedPlugin(props) {
           <i className="fa fa-cog fa-2x" />
         </DropdownToggle>
         <ul className="dropdown-menu show">
-          <li className="header-title">SIDEBAR BACKGROUND</li>
+          <li className="header-title">ARRIÈRE-PLAN DE LA BARRE LATÉRALE</li>
           <li className="adjustments-line">
             <div className="badge-colors text-center">
               <Badge
-                color="primary"
+                color="danger"
                 className={
                   props.bgColor === backgroundColors.primary ? "active" : ""
                 }

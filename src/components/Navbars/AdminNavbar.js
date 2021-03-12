@@ -37,6 +37,7 @@ import {
     NavbarToggler,
     ModalHeader,
 } from "reactstrap";
+import AuthNav from "./auth-nav";
 
 function AdminNavbar(props) {
     const [collapseOpen, setcollapseOpen] = React.useState(false);
@@ -163,7 +164,7 @@ function AdminNavbar(props) {
 
                                 <DropdownMenu className="dropdown-navbar" right tag="ul">
                                     <NavLink tag="li">
-                                        <DropdownItem className="nav-item">Profile</DropdownItem>
+                                        <DropdownItem className="nav-item" href="/user-profile"> Profile</DropdownItem>
                                     </NavLink>
                                     <NavLink tag="li">
                                         <DropdownItem className="nav-item">Settings</DropdownItem>
@@ -174,9 +175,10 @@ function AdminNavbar(props) {
                                     </NavLink>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
-                            <li className="separator d-lg-none"/>
+
                         </Nav>
-                    </Collapse>
+
+                    </Collapse><AuthNav/>
                 </Container>
             </Navbar>
             <Modal
@@ -195,6 +197,7 @@ function AdminNavbar(props) {
                     </button>
                 </ModalHeader>
             </Modal>
+
         </>
     );
 }

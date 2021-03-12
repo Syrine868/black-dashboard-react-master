@@ -42,8 +42,7 @@ ReactDOM.render(
      <Auth0ProviderWithHistory >
   <ThemeContextWrapper>
     <BackgroundColorWrapper>
-        <LogoutButton/>
-        <LoginButton/>
+
 
 <AdminLayout/>
 
